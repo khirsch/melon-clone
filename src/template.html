@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>Live Streaming Studio | Melon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+  <section class="studio">
+    <div class="left-nav">
+      <a class="button" href="#add-source" rel="modal:open">Add Source</a>
+      <a class="source-placeholder" href="#add-source" rel="modal:open">
+        <h1>Add media source</h1>
+        <span>Screenshare, Camera</span>
+      </a>
+      <div class="source-preview"></div>
+    </div>
+    <section class="stream-player">
+      <div class="stream-player__content"></div>
+      <div class="layout-options"></div>
+    </section>
+    <div class="controls">
+      <span class="control-button">Chat</span>
+      <span class="control-button">Record</span>
+      <span class="control-button">Go Live</span>
+    </div>
+  </section>
+  <div id="add-source" class="modal" style="display:none;">
+    <h1>Add a new media source</h1>
+    <div class="input-wrapper">
+        <label for="screenshare">Screenshare</label>
+        <input type="file" id="screenshare">
+        <label for="video-feed">Video Feed</label>
+        <input type="file" id="video-feed">
+    </div>
+  </div>
+</body>
